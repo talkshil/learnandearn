@@ -1,0 +1,228 @@
+<html>
+
+<head>
+    <title>Learn and Earn</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+            font-weight: bolder;
+            color: #2a2a2a;
+        }
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px 0;
+            border-radius: 8px;
+            margin: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+
+
+            padding: 14px 20px;
+
+            display: inline-block;
+            transition: background-color 0.3s;
+        }    {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .cta-button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+
+        .featured-courses h3 {
+            text-align: center;
+            font-size: 1.8em;
+        }
+
+        .course-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+        .course-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+            margin: 15px;
+
+
+            padding: 20px;
+
+            width: 350px;
+            box-sizing: border-box;
+        }
+
+
+        .course-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .course-card h4 {
+            color: #333;
+        }
+
+        .course-card p {
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        .course-card a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .course-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- "About Us" Section --- */
+        .about-us {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Learn and Earn</h1>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="courses.html">Courses</a>
+        <a href="signup.html">Sign up</a>
+    </nav>
+
+    <main>
+
+        <section class="hero">
+            <h2>Master New Skills. Grow Your Career.</h2>
+            <p>Join "Learn and Earn" to gain in-demand skills from industry experts.</p>
+            <a href="#courses" class="cta-button">Browse Courses</a>
+        </section>
+
+        <section id="courses" class="featured-courses">
+            <h3>Our Popular Courses</h3>
+
+            <div class="course-grid">
+
+                <article class="course-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9a3MYdqdWxn-5ua1i4uPLLtaxc4ydkZdxqQ&s" alt="BASIC TRADING Course">
+                    <h4>BASIC TRADING</h4>
+                    <p>Trading is the core economic concept of buying and selling financial instruments like stocks,
+                        bonds, currencies, or commodities with the goal of generating a profit from short-term price
+                        fluctuations.</p>
+                    <a href="trading.html">Learn More</a>
+                </article>
+
+                <article class="course-card">
+                    <img src="https://www.simplilearn.com/ice9/webinar_thum_image/Digital_Marketing_Tutorial.jpg"
+                        alt="Digital Marketing Course">
+                    <h4>Digital Marketing Mastery</h4>
+                    <p>Master SEO, social media marketing, and content strategy to grow any business.</p>
+                    <a href="digital.html">Learn More</a>
+                </article>
+
+                <article class="course-card">
+                    <img src="https://parthinfo.com/wp/wp-content/uploads/2022/10/logo_mscit.png" alt="MS-CIT">
+                    <h4>MS CIT</h4>
+                    <p>MS-CIT is a computer literacy program by the Maharashtra Knowledge Corporation Limited (MKCL)
+                        that teaches basic computer skills through a 144-hour curriculum divided into theory, practical,
+                        and homework.</p>
+                    <a href="mscit.html">Learn More</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="about" class="about-us">
+            <h3>Why Choose Learn and Earn?</h3>
+            <p>We believe learning new skills should be accessible to everyone. Our platform offers hands-on projects,
+                expert-led video lessons, and a vibrant community to help you not just learn, but also apply your
+                knowledge to earn more.</p>
+        </section>
+
+    </main>
+
+    <footer style="text-align: center;">
+        <footer class="site-footer">
+            <p>&copy; 2025 Learn and Earn. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </footer>
+
+</body>
+
+</html>

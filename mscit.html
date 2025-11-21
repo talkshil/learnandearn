@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS-CIT Course</title>
+
+    <style>
+        /* New Theme Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+            font-weight: bolder;
+            color: #2a2a2a;
+        }
+
+        /* --- Header (New Style) --- */
+        .header {
+            background: #ffffff; /* Keeping the background white/light for the main title area */
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        /* --- Navigation (New Style: Dark Gray/Black Navbar) --- */
+        nav {
+            text-align: center;
+            background-color: #333; /* Dark background */
+            padding: 10px 0;
+            border-radius: 8px;
+            margin: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 14px 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555; /* Darker hover */
+            border-radius: 5px;
+        }
+
+        /* --- Main Content Area (New Style) --- */
+        .content {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto; /* Center the content */
+        }
+
+        .box {
+            background: white;
+            border: 1px solid #ddd; /* Lighter border from the theme */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #007bff; /* Bright Blue accent color */
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        img {
+            width: 100%; /* Make images fill the content box */
+            max-width: 300px; /* Constraint for logo image */
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* --- CTA Button (New Style: Bright Blue) --- */
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            background: #007bff; /* Bright Blue primary color */
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3; /* Darker Blue hover */
+        }
+
+        /* Styling lists for better readability */
+        ul, ol {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>MS-CIT Course</h1>
+        <p>Learn Essential Computer Skills From Scratch</p>
+    </div>
+
+    <nav>
+        <a href="cources.html"> Back to Course Catalog</a>
+        <a href="#intro">Introduction</a>
+        <a href="#skills">Skills</a>
+        <a href="#modules">Modules</a>
+        <a href="#exam">Exam</a>
+        <a href="#price">Price</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#enroll">Enroll Now</a>
+    </nav>
+
+    <div class="content">
+
+        <div class="box" id="intro">
+            <h2>Introduction</h2>
+            <img src="https://parthinfo.com/wp/wp-content/uploads/2022/10/logo_mscit.png" alt="MS-CIT">
+            <p>MS-CIT is a computer literacy course designed to help beginners learn computer basics, MS Office, internet use, digital services, and online learning through MKCL ERA.</p>
+        </div>
+
+        <div class="box" id="skills">
+            <h2>What You Will Learn</h2>
+            <ul>
+                <li> MS Office  (Word, Excel, PowerPoint)</li>
+                <li>Basic Computer Operations</li>
+                <li>Email & Internet Usage</li>
+                <li>Digital Payments</li>
+                <li>Cyber Security Basics</li>
+                <li>Typing Skills</li>
+            </ul>
+        </div>
+
+        <div class="box" id="modules">
+            <h2>Course Modules</h2>
+            <ol>
+                <li>Computer Introduction</li>
+                <li>Windows Basics</li>
+                <li>MS Word</li>
+                <li>MS Excel</li>
+                <li>MS PowerPoint</li>
+                <li>Internet & Email</li>
+                <li>Digital Services</li>
+            </ol>
+        </div>
+
+        <div class="box" id="exam">
+            <h2>Final Exam</h2>
+            <p>The final examination is split into two parts:</p>
+            <ul>
+                <li>Online Test –  50 Marks </li>
+                <li>Practical Test –  50 Marks </li>
+            </ul>
+        </div>
+
+        <div class="box" id="price">
+            <h2>Course Price</h2>
+            <p id="priceText">Click the button below to view the course fee.</p>
+            <button onclick="showPrice()">Show Price</button>
+        </div>
+
+        <div class="box" id="benefits">
+            <h2>Why Choose MS-CIT?</h2>
+            <ul>
+                <li> Government-Recognized Certificate </li>
+                <li>Best for Job Skills</li>
+                <li>Beginner-Friendly Course</li>
+                <li>Useful for Competitive Exams</li>
+            </ul>
+        </div>
+
+        <div class="box" id="enroll">
+            <h2>Enroll Now</h2>
+            <p>Click the button to start the enrollment process.</p>
+            <a href="signup.html"><button>Enroll Now</button></a>
+        </div>
+
+    </div>
+
+    <script>
+        function showPrice() {
+            document.getElementById("priceText").innerHTML =
+                "MS-CIT Course Fee: ₹599-₹699 (depending on the center and batch).";
+        }
+    </script>
+</body>
+</html>
